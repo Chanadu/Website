@@ -6,12 +6,12 @@
 </script>
 
 <SmallPageTemplate
-	classNames="flex flex-col items-center justify-center bg-slate-600"
+	extraClassNames="flex flex-col items-center justify-center bg-slate-600"
 	name="{name}"
 >
-	{#if empty}
-		<span>Placeholder</span>
-	{/if}
+	<div>
+		{empty ? 'Placeholder' : ''}
+	</div>
 </SmallPageTemplate>
 
 <style lang="postcss">
