@@ -55,7 +55,7 @@
 <div
 	transition:scale="{{
 		duration: 500,
-		delay: 100,
+		delay: 0,
 		opacity: 1,
 		start: 9,
 		easing: quintOut,
