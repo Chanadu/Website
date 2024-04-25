@@ -20,19 +20,23 @@
 
 <svelte:head>
 	<title>Website</title>
-	<meta name="description" content="Chandu Peddada's Website" />
+	<meta
+		name="description"
+		content="Chandu Peddada's Website"
+	/>
 </svelte:head>
 
-<main class="flex justify-center items-center min-h-[100.1vh]">
-	<section class="flex flex-row justify-center items-center">
+<main class="flex min-h-[100.1vh] items-center justify-center">
+	<section class="flex flex-row items-center justify-center">
 		<HorizontalBar isLeft="{true}"></HorizontalBar>
-		<NameCard {name}></NameCard>
-		<HorizontalBar isLeft="{false}" extraDelay="{500}"></HorizontalBar>
+		<NameCard name="{name}"></NameCard>
+		<HorizontalBar
+			isLeft="{false}"
+			extraDelay="{500}"
+		></HorizontalBar>
 	</section>
 </main>
-<div
-	class="absolute top-[55vh] left-[37vw] flex flex-row w-[26vw] justify-around items-center"
->
+<div class="absolute left-[37vw] top-[55vh] flex w-[26vw] flex-row items-center justify-around">
 	<SocialsIcon></SocialsIcon>
 	<SocialsIcon></SocialsIcon>
 	<SocialsIcon></SocialsIcon>

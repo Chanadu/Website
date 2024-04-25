@@ -2,8 +2,11 @@
 	import '../app.css';
 </script>
 
-<div class="m-0 min-h-screen bg-slate-800 text-white">
-	<div id="main-container" class=" mx-auto max-w-6xl my-auto">
+<div class="m-0 min-h-screen bg-slate-800 text-slate-100">
+	<div
+		id="main-container"
+		class=" mx-auto my-auto max-w-6xl"
+	>
 		<slot />
 	</div>
 </div>

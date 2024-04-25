@@ -19,7 +19,7 @@
 			opacity: 1,
 		}}"
 	>
-		<h1 class="text-nowrap text-5xl sono-400">
+		<h1 class="sono-400 text-nowrap text-5xl">
 			{name}
 		</h1>
 	</div>

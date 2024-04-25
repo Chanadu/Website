@@ -9,7 +9,7 @@
 
 {#if pageLoadReady}
 	<div
-		class="border w-12 h-12 flex justify-center items-center"
+		class="flex h-12 w-12 items-center justify-center border"
 		transition:slide="{{
 			delay: 2000,
 			duration: 400,

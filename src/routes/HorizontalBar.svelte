@@ -13,7 +13,7 @@
 
 {#if pageLoadReady}
 	<div
-		class="w-80 h-3 bg-slate-100 mx-4 rounded-xl"
+		class="mx-4 h-3 w-80 rounded-xl bg-slate-100"
 		transition:fly="{{
 			delay: delay,
 			duration: 600,
