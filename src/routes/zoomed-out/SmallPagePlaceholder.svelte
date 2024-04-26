@@ -12,6 +12,7 @@
 	<div>
 		{empty ? 'Placeholder' : ''}
 	</div>
+	<slot></slot>
 </SmallPageTemplate>
 
 <style lang="postcss">

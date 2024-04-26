@@ -7,7 +7,7 @@
 		id="main-container"
 		class=" mx-auto my-auto max-w-6xl"
 	>
-		<slot />
+		<slot></slot>
 	</div>
 </div>
 
