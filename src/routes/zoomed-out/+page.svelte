@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { quintOut } from 'svelte/easing';
+	import { expoInOut } from 'svelte/easing';
 	import { scale } from 'svelte/transition';
 	import SmallHomePage from './SmallHomePage.svelte';
 	import SmallPagePlaceholder from './SmallPagePlaceholder.svelte';
@@ -11,7 +11,7 @@
 		delay: 0,
 		opacity: 1,
 		start: 9,
-		easing: quintOut,
+		easing: expoInOut,
 	}}"
 >
 	<div class="grid grid-cols-3 sm:gap-16 md:gap-24 lg:gap-24">
