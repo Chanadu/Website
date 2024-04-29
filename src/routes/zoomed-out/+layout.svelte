@@ -6,7 +6,7 @@
 </script>
 
 {#if isReady}
-	<div class="flex h-screen max-h-screen items-center justify-center">
+	<div class="flex min-h-screen items-center justify-center pb-[8vh]">
 		<slot />
 	</div>
 {/if}

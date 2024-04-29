@@ -18,10 +18,10 @@
 		goto('/zoomed-out');
 	}
 
-	export let hasRunAnimation = false;
-	$: {
-		console.log(hasRunAnimation);
-	}
+	// export let hasRunAnimation = false;
+	// $: {
+	// 	console.log(hasRunAnimation);
+	// }
 </script>
 
 <svelte:head>
@@ -32,7 +32,7 @@
 	/>
 </svelte:head>
 
-<main class="flex min-h-[100.1vh] items-center justify-center">
+<main class="flex min-h-[100.1vh] items-center justify-center pb-16">
 	<section class="flex flex-row items-center justify-center">
 		<HorizontalBar isLeft="{true}"></HorizontalBar>
 		<NameCard name="{name}"></NameCard>
@@ -42,7 +42,7 @@
 		></HorizontalBar>
 	</section>
 </main>
-<div class="absolute left-[37vw] top-[55vh] flex w-[26vw] flex-row items-center justify-around">
+<div class="absolute left-[37vw] top-[52vh] flex w-[26vw] flex-row items-center justify-around">
 	<SocialsIcon></SocialsIcon>
 	<SocialsIcon></SocialsIcon>
 	<SocialsIcon></SocialsIcon>

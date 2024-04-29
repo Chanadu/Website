@@ -8,7 +8,7 @@
 </script>
 
 <button
-	class="group min-h-[9rem] min-w-[16rem] select-none transition-all delay-[50ms] hover:-translate-y-2 hover:transform hover:cursor-pointer hover:bg-slate-700 hover:shadow-lg {extraClassNames}"
+	class="group min-h-[9rem] min-w-[16rem] select-none rounded-2xl border-2 border-secondary bg-container transition-all delay-[50ms] ease-in hover:-translate-y-2 hover:transform hover:cursor-pointer hover:border-primary hover:shadow-lg {extraClassNames}"
 	on:click="{(_) => {
 		goto('/');
 	}}"
