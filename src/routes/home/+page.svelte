@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
+	import { expoInOut } from 'svelte/easing';
+	import { scale } from 'svelte/transition';
 	import HorizontalBar from './HorizontalBar.svelte';
 	import NameCard from './NameCard.svelte';
 	import SocialsIcon from './SocialsIcon.svelte';
@@ -17,11 +19,6 @@
 		}
 		goto('/zoomed-out');
 	}
-
-	// export let hasRunAnimation = false;
-	// $: {
-	// 	console.log(hasRunAnimation);
-	// }
 </script>
 
 <svelte:head>
@@ -32,7 +29,16 @@
 	/>
 </svelte:head>
 
-<main class="flex min-h-[100.1vh] items-center justify-center pb-16">
+<main
+	class="flex min-h-[100.1vh] items-center justify-center pb-16"
+	transition:scale="{{
+		duration: 600,
+		delay: 100,
+		opacity: 1,
+		start: 1 / 9,
+		easing: expoInOut,
+	}}"
+>
 	<section class="flex flex-row items-center justify-center">
 		<HorizontalBar isLeft="{true}"></HorizontalBar>
 		<NameCard name="{name}"></NameCard>

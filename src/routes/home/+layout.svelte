@@ -1,18 +1,21 @@
 <script lang="ts">
-	import { navigating } from '$app/stores';
-
-	let hasRunAnimation = false;
-
-	$: {
-		if ($navigating?.from!.url.pathname == '/zoomed-out') {
-			hasRunAnimation = true;
-		}
-	}
+	let isReady = false;
+	// onMount(() => {
+	// 	isReady = true;
+	// });
 </script>
 
-<div>
-	<slot hasRunAnimation="{hasRunAnimation}"></slot>
-</div>
+{#key isReady}
+	<button
+		on:click="{() => (isReady = true)}"
+		class="min-h-8 min-w-8 bg-accent"
+	>
+		one
+	</button>
+	<div>
+		<slot></slot>
+	</div>
+{/key}
 
 <style lang="postcss">
 </style>

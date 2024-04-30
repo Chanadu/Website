@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { circIn } from 'svelte/easing';
+	import { expoIn } from 'svelte/easing';
 	import { fly } from 'svelte/transition';
 
 	export let isLeft: Boolean;
@@ -13,11 +13,11 @@
 
 {#if pageLoadReady}
 	<div
-		class="bg-text mx-12 h-2 w-80 rounded-xl"
+		class="mx-12 h-2 w-80 rounded-xl bg-text"
 		transition:fly="{{
 			delay: delay,
 			duration: 600,
-			easing: circIn,
+			easing: expoIn,
 			x: 75 * (isLeft ? -1 : 1) + 'vh',
 			opacity: 1,
 		}}"

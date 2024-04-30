@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { circIn } from 'svelte/easing';
+	import { expoInOut } from 'svelte/easing';
 	import { fly } from 'svelte/transition';
 
 	export let name: String;
@@ -14,7 +14,7 @@
 		transition:fly="{{
 			delay: 100,
 			duration: 600,
-			easing: circIn,
+			easing: expoInOut,
 			y: '-55vh',
 			opacity: 1,
 		}}"
