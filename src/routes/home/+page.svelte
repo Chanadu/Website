@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
-	import { expoInOut } from 'svelte/easing';
-	import { scale } from 'svelte/transition';
 	import HorizontalBar from './HorizontalBar.svelte';
 	import NameCard from './NameCard.svelte';
 	import SocialsIcon from './SocialsIcon.svelte';
 
 	let name = 'Chandu Peddada';
+	let transitionDelay = 100;
+	let transitionDuration = 600;
 
 	onMount(() => {
 		window.addEventListener('scroll', scrollEvent);
@@ -29,16 +29,7 @@
 	/>
 </svelte:head>
 
-<main
-	class="flex min-h-[100.1vh] items-center justify-center pb-16"
-	transition:scale="{{
-		duration: 600,
-		delay: 100,
-		opacity: 1,
-		start: 1 / 9,
-		easing: expoInOut,
-	}}"
->
+<main class="flex min-h-[100.1vh] flex-col items-center justify-center pb-16">
 	<section class="flex flex-row items-center justify-center">
 		<HorizontalBar isLeft="{true}"></HorizontalBar>
 		<NameCard name="{name}"></NameCard>
@@ -47,14 +38,14 @@
 			extraDelay="{500}"
 		></HorizontalBar>
 	</section>
+	<div class="relative top-8 flex w-[26vw] flex-row items-center justify-around">
+		<SocialsIcon></SocialsIcon>
+		<SocialsIcon></SocialsIcon>
+		<SocialsIcon></SocialsIcon>
+		<SocialsIcon></SocialsIcon>
+		<SocialsIcon></SocialsIcon>
+	</div>
 </main>
-<div class="absolute left-[37vw] top-[52vh] flex w-[26vw] flex-row items-center justify-around">
-	<SocialsIcon></SocialsIcon>
-	<SocialsIcon></SocialsIcon>
-	<SocialsIcon></SocialsIcon>
-	<SocialsIcon></SocialsIcon>
-	<SocialsIcon></SocialsIcon>
-</div>
 
 <style lang="postcss">
 </style>
