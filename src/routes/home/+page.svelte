@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
+	import { transitionState } from '../stores';
 	import HorizontalBar from './HorizontalBar.svelte';
 	import NameCard from './NameCard.svelte';
 	import SocialsIcon from './SocialsIcon.svelte';
@@ -17,6 +18,7 @@
 		if (window.scrollY > 0) {
 			window.scrollTo(0, 0);
 		}
+		$transitionState = -1;
 		goto('/zoomed-out');
 	}
 </script>
