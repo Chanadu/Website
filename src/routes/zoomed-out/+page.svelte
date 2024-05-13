@@ -1,6 +1,6 @@
 <script lang="ts">
 	import SmallHomePage from './SmallHomePage.svelte';
-	import SmallPagePlaceholder from './SmallPagePlaceholder.svelte';
+	import SmallPageEmpty from './SmallPageEmpty.svelte';
 </script>
 
 <div>
@@ -9,7 +9,7 @@
 			{#if i == 4}
 				<SmallHomePage name="Home Page"></SmallHomePage>
 			{:else}
-				<SmallPagePlaceholder name="{i + ''}">{i}</SmallPagePlaceholder>
+				<SmallPageEmpty name="Coming Soon!">{i}</SmallPageEmpty>
 			{/if}
 		{/each}
 	</div>

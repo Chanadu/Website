@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
+	import { goto, preloadData } from '$app/navigation';
 	import { transitionState } from '../stores';
 	import SmallPageTemplate from './SmallPageTemplate.svelte';
 	export let name: String;
@@ -7,17 +7,16 @@
 
 <button
 	on:click="{(_) => {
-		$transitionState = 2;
+		preloadData('/home');
+		$transitionState = -1;
 		setTimeout(() => {
 			console.log('Timeout Finished');
 			goto('/home');
-		}, 600);
+		}, 200);
 	}}"
 >
-	<SmallPageTemplate
-		extraClassNames="flex flex-col items-center justify-center"
-		name="{name}"
-	>
+	<SmallPageTemplate tooltip="{name}">
+		<div class="h-2"></div>
 		<div class="flex flex-row items-center justify-center">
 			<div class="mx-2 h-1 w-12 rounded-2xl bg-accent"></div>
 			<div class="bg-slate-400 h-2 w-12 rounded-2xl bg-accent"></div>

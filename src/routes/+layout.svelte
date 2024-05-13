@@ -2,7 +2,7 @@
 	import '../app.css';
 </script>
 
-<div class="bg-background text-text m-0 min-h-screen">
+<div class="m-0 min-h-screen bg-background text-text">
 	<div class=" mx-auto my-auto max-w-6xl">
 		<slot></slot>
 	</div>
