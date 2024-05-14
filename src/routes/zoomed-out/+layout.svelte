@@ -7,9 +7,6 @@
 	onMount(() => {
 		$transitionState = 1;
 	});
-	$: {
-		console.log($transitionState);
-	}
 </script>
 
 {#if $transitionState == 1}

@@ -7,8 +7,6 @@
 	import SocialsIcon from './SocialsIcon.svelte';
 
 	let name = 'Chandu Peddada';
-	let transitionDelay = 100;
-	let transitionDuration = 600;
 
 	onMount(() => {
 		window.addEventListener('scroll', scrollEvent);
@@ -42,10 +40,12 @@
 	</section>
 	<div class="relative top-8 flex w-[26vw] flex-row items-center justify-around">
 		<SocialsIcon></SocialsIcon>
+		<!--
 		<SocialsIcon></SocialsIcon>
 		<SocialsIcon></SocialsIcon>
 		<SocialsIcon></SocialsIcon>
 		<SocialsIcon></SocialsIcon>
+		-->
 	</div>
 </main>
 

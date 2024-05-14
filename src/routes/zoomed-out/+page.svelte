@@ -9,7 +9,7 @@
 			{#if i == 4}
 				<SmallHomePage name="Home Page"></SmallHomePage>
 			{:else}
-				<SmallPageEmpty name="Coming Soon!">{i}</SmallPageEmpty>
+				<SmallPageEmpty name="Coming Soon!"></SmallPageEmpty>
 			{/if}
 		{/each}
 	</div>

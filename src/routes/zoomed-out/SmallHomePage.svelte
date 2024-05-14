@@ -10,7 +10,6 @@
 		preloadData('/home');
 		$transitionState = -1;
 		setTimeout(() => {
-			console.log('Timeout Finished');
 			goto('/home');
 		}, 200);
 	}}"
