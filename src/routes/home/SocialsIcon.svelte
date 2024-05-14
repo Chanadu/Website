@@ -19,7 +19,7 @@
 				axis: 'y',
 			}}"
 			alt="Social Icon"
-			src="{$darkState ? 'github-mark-white.svg' : 'github-mark.svg'}"
+			src="{$darkState ? 'images/github-mark-white.svg' : 'images/github-mark.svg'}"
 		/>
 	</a>
 {/if}

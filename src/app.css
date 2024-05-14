@@ -19,4 +19,17 @@
 		--secondary: #77314d;
 		--accent: #443bcb;
 	}
+
+	.light-primary-filter {
+		filter: invert(59%) sepia(96%) saturate(276%) hue-rotate(125deg) brightness(97%) contrast(84%);
+	}
+	.dark-primary-filter {
+		filter: invert(65%) sepia(23%) saturate(1105%) hue-rotate(125deg) brightness(95%) contrast(82%);
+	}
+	.light-secondary-filter {
+		filter: invert(71%) sepia(11%) saturate(1449%) hue-rotate(289deg) brightness(87%) contrast(83%);
+	}
+	.dark-secondary-filter {
+		filter: invert(23%) sepia(24%) saturate(1420%) hue-rotate(284deg) brightness(97%) contrast(90%);
+	}
 }
