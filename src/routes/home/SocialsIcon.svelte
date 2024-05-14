@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import { linear } from 'svelte/easing';
 	import { slide } from 'svelte/transition';
+	import { darkState } from '../stores';
 
 	let pageLoadReady = false;
 	onMount(() => (pageLoadReady = true));
@@ -18,7 +19,7 @@
 				axis: 'y',
 			}}"
 			alt="Social Icon"
-			src="github-mark-white.svg"
+			src="{$darkState ? 'github-mark-white.svg' : 'github-mark.svg'}"
 		/>
 	</a>
 {/if}
