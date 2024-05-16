@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+	/* IDK WHEN UPDATING UPDATE THE SVGS IDK HOW TO CONNECT THEM */
 	:root {
 		--text: #000f0f;
 		--background: #f5ffff;
