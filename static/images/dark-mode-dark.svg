@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-	aria-labelledby="nightModeIconTitle" stroke="#3bbaad" stroke-width="1" stroke-linecap="square"
-	stroke-linejoin="miter" fill="none" color="#3bbaad">
+	aria-labelledby="nightModeIconTitle" stroke="#77314d" stroke-width="1" stroke-linecap="square"
+	stroke-linejoin="miter" fill="none" color="#77314d">
 	<title id="nightModeIconTitle">Night Mode</title>
 	<path d="M12 19a7 7 0 1 0 0-14 7 7 0 0 0 0 14z" />
 	<path
