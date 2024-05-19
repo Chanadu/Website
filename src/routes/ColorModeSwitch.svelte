@@ -2,7 +2,9 @@
 	import { darkState } from './stores';
 </script>
 
-<div class="absolute right-24 top-16">
+<div
+	class="fixed right-2 top-2 sm:right-4 sm:top-4 md:right-8 md:top-8 lg:right-12 lg:top-12 xl:right-16 xl:top-16 2xl:right-24 2xl:top-24"
+>
 	<label class="inline-flex cursor-pointer items-center">
 		<input
 			type="checkbox"

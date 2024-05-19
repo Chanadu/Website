@@ -13,12 +13,10 @@
 
 {#if pageLoadReady}
 	<div
-		class="mx-12 h-2 w-80 rounded-xl bg-text"
+		class="mx-12 h-2 rounded-xl bg-text sm:w-32 md:w-48 lg:w-64 xl:w-80 2xl:w-96"
 		transition:fly="{{
-			delay: delay,
-			duration: 600,
-			easing: expoIn,
-			x: 75 * (isLeft ? -1 : 1) + 'vh',
+			delay: delay, duration: 600, easing: expoIn,
+			x: 75 * (isLeft ? -1 : 1) + 'vw',
 			opacity: 1,
 		}}"
 	></div>
